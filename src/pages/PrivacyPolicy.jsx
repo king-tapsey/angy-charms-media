@@ -1,4 +1,7 @@
-import { Box, Stack, Typography } from '@mui/material'
+import Box from '@mui/material/Box'
+import Link from '@mui/material/Link'
+import Stack from '@mui/material/Stack'
+import Typography from '@mui/material/Typography'
 import React from 'react'
 import { colors } from '../theme'
 
@@ -43,7 +46,8 @@ const PrivacyPolicy = () => {
           1. Access the personal information we hold about you.<br />
           2. Correct inaccuracies in your personal information.<br />
           3. Request the deletion of your personal information.<br />
-          4. To exercise these rights or if you have any questions about our privacy practices, please contact us at support@angycharms.com.<br />
+          4. To exercise these rights or if you have any questions about our privacy practices, please contact us at 
+          <Link underline='hover' color={colors.primary[700]} href='mailto:support@angycharms.com?&amp;&amp;body=%5BCustomize%20body%20here%5D&amp;subject=%5BCustomize%20subject%20here%5D'> support@angycharms.com. </Link> 
         </Typography>
       </Stack>
     </Box>

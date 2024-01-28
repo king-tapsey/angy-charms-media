@@ -1,4 +1,7 @@
-import { Box, Stack, Typography } from '@mui/material'
+import Box from '@mui/material/Box'
+import Link from '@mui/material/Link'
+import Stack from '@mui/material/Stack'
+import Typography from '@mui/material/Typography'
 import React from 'react'
 import { colors } from '../theme'
 
@@ -39,7 +42,8 @@ const TermsOfService = () => {
         </Typography>
         <Typography variant='h5' color={colors.primary[700]}>8. Contact Information</Typography>
         <Typography align='left'>
-          If you have any questions about these Terms of Service, please contact us at support@angycharms.com.
+          If you have any questions about these Terms of Service, please contact us at 
+          <Link underline='hover' color={colors.primary[700]} href='mailto:support@angycharms.com?&amp;&amp;body=%5BCustomize%20body%20here%5D&amp;subject=%5BCustomize%20subject%20here%5D'> support@angycharms.com. </Link> 
         </Typography>
       </Stack>
     </Box>

@@ -1,4 +1,13 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Container, Grid, Stack, Typography } from '@mui/material'
+import Accordion from '@mui/material/Accordion'
+import AccordionDetails from '@mui/material/AccordionDetails'
+import AccordionSummary from '@mui/material/AccordionSummary'
+import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid'
+import Link from '@mui/material/Link'
+import Stack from '@mui/material/Stack'
+import Typography from '@mui/material/Typography'
 import React, { useState } from 'react'
 import { colors } from '../theme'
 import Lion from '../images/lion.jpg'
@@ -53,6 +62,7 @@ const Home = () => {
                         </Typography>
                         <Button 
                             variant='contained' 
+                            href='#book_appointment'
                             color='secondary'
                             size='large'
                             sx={{ borderRadius: '50px', px: 10, py: 2}}
@@ -131,19 +141,21 @@ const Home = () => {
                     We're not just about pretty words and visuals; we're about achieving measurable results. Your success is our success.
                 </Typography>
             </Stack>
-            <Box>
+            <Box id="book_appointment">
                 <Typography variant='h3' align='left' color={colors.primary[700]} p={{ xs: 5, lg: 10 }}>Ready To Take Action?</Typography>
                 <Grid container justifyContent='flex-start' alignItems='center' columns={{ sx: 6, md: 12 }}>
                     <Grid item xs={6} px={{ xs: 5, lg: 10}} pb={{ xs: 5, lg: 10 }}>
                         <Typography align='left'>
                             Ready to take your brand to the next level? Let's embark on this journey together! <br/><br/>
-                            Go on and contact us at sales@angycharms.com to book an appointment with our team so we can discuss the way forward.
+                            Go on and contact us at 
+                            <Link underline='hover' color={colors.primary[700]} href='mailto:sales@angycharms.com?&amp;&amp;body=%5BCustomize%20body%20here%5D&amp;subject=Appointment%20request%3A%20%5BCustomize%20subject%20here%5D'> sales@angycharms.com </Link> 
+                            to book an appointment with our team so we can discuss the way forward.
                         </Typography>
                     </Grid>
                     <Grid item xs={6} px={{ xs: 5, lg: 10}} pb={{ xs: 5, lg: 10 }}>
                         <Button 
                             variant='contained' 
-                            // color={colors.primary[700]}
+                            href='mailto:sales@angycharms.com?&amp;&amp;body=%5BCustomize%20body%20here%5D&amp;subject=Appointment%20request%3A%20%5BCustomize%20subject%20here%5D'
                             size='large'
                             sx={{ 
                                 borderRadius: '50px', 

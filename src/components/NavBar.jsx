@@ -1,6 +1,19 @@
 import MenuIcon from '@mui/icons-material/MenuOutlined'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import { AppBar, Box, Container, IconButton, Toolbar, Button, Drawer, ListItem, ListItemButton, ListItemText, Divider, styled, CssBaseline, Link, useMediaQuery } from '@mui/material'
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import IconButton from '@mui/material/IconButton';
+import Toolbar from '@mui/material/Toolbar';
+import Button from '@mui/material/Button'
+import Drawer from '@mui/material/Drawer';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
+import CssBaseline from '@mui/material/CssBaseline';
+import Link from '@mui/material/Link';
+import { styled, useMediaQuery } from '@mui/material'
 import React, { useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom';
 import { colors } from '../theme';
@@ -114,7 +127,8 @@ const NavBar = ({ theme }) => {
                     </Box>
                     <Box>
                         <Button 
-                            variant='contained' 
+                            variant='contained'  
+                            href='mailto:sales@angycharms.com?&amp;&amp;body=%5BCustomize%20body%20here%5D&amp;subject=Appointment%20request%3A%20%5BCustomize%20subject%20here%5D'
                             // color={colors.secondary[600]} 
                             disableElevation 
                             sx={{ 
